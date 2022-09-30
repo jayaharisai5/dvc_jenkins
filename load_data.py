@@ -26,3 +26,5 @@ def load_data():
     print("Data is loaded......")
     return df
 
+load_data()
+
