@@ -2,15 +2,12 @@
 import pandas as pd
 import boto3 
 import botocore
-from configparser import ConfigParser
 
-file = "cred\cred.ini"
-config = ConfigParser()
-config.read(file)
+
 
 session = boto3.Session(
-         aws_access_key_id=config["account"]["aws_access_key_id"],
-         aws_secret_access_key=config["account"]["aws_secret_access_key"]
+         aws_access_key_id="AKIA3YG72WSKAY3DQARO",
+         aws_secret_access_key="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"
 )
 '''
 s3 = boto3.resource('s3')
